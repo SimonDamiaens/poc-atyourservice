@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 
-export default function Dashboard() {
+export default function Events() {
   return (
     <main className="flex min-h-screen w-full">
       <aside id="logo-sidebar" className="h-screen w-2/12" aria-label="Sidebar">
@@ -12,7 +12,7 @@ export default function Dashboard() {
           <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
           <ul className="space-y-2 font-medium">
             <li>
-              <Link href="/" className="flex items-center p-2 rounded-lg text-white bg-gray-700 group">
+              <Link href="/" className="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
                 <span className="ml-3">Dashboard</span>
               </Link>
             </li>
@@ -22,7 +22,7 @@ export default function Dashboard() {
               </Link>
             </li>
             <li>
-              <Link href="/events" className="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
+              <Link href="/events" className="flex items-center p-2  rounded-lg text-white bg-gray-700 group">
                 <span className="flex-1 ml-3 whitespace-nowrap">Events</span>
               </Link>
             </li>
